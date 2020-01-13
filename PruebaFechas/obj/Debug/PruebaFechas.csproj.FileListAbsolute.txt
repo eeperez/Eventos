@@ -1,0 +1,6 @@
+F:\CursoSOLID\PruebaFechas\PruebaFechas\obj\Debug\PruebaFechas.csprojAssemblyReference.cache
+F:\CursoSOLID\PruebaFechas\PruebaFechas\bin\Debug\PruebaFechas.exe.config
+F:\CursoSOLID\PruebaFechas\PruebaFechas\bin\Debug\PruebaFechas.exe
+F:\CursoSOLID\PruebaFechas\PruebaFechas\bin\Debug\PruebaFechas.pdb
+F:\CursoSOLID\PruebaFechas\PruebaFechas\obj\Debug\PruebaFechas.exe
+F:\CursoSOLID\PruebaFechas\PruebaFechas\obj\Debug\PruebaFechas.pdb
