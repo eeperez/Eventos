@@ -43,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConvertidorAEvento.cs" />
+    <Compile Include="DiferenciadorEvento.cs" />
+    <Compile Include="Evento.cs" />
+    <Compile Include="Interfaces\IConvertidorAEvento.cs" />
+    <Compile Include="Interfaces\IDiferenciadorEvento.cs" />
+    <Compile Include="Interfaces\ILectorArchivo.cs" />
+    <Compile Include="Interfaces\IPresentadorDatos.cs" />
+    <Compile Include="Interfaces\IVerificadorEvento.cs" />
+    <Compile Include="LectorArchivos.cs" />
+    <Compile Include="PresentadorDatos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerificadorEvento.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
