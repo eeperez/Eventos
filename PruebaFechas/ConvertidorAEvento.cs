@@ -13,6 +13,7 @@ namespace PruebaFechas
 
 			lstEventos = (from l in _lstLineas
 						  let datos = l.Split(',')
+						  where datos.Count() == 2
 						  select new Evento
 						  {
 							  cTitulo = datos[0],

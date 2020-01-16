@@ -28,16 +28,17 @@ namespace PruebaFechas
 			{
 				int iDias = Math.Abs(diferencia.Days);
 				int iHoras = Math.Abs(diferencia.Hours);
+				int iMinutos = Math.Abs(diferencia.Minutes);
 				if (iDias > 0)
 					cRango = $"{iDias} Días";
 				else if (iHoras > 0)
 					cRango = $"{iHoras} Horas";
-				else
+				else if(iMinutos > 0)
 					cRango = $"{Math.Abs(diferencia.Minutes)} Minutos";
 			}
 
 			string cNombreDiferencia = IverificadorEvento.ObtenerNombreDiferenciaFechas(_dtActual, _dtFecha);
-			cResultado = $"{cNombreDiferencia} {cRango}";
+			cResultado = $"{cNombreDiferencia} {cRango}".Trim();
 
 			return cResultado;
 		}

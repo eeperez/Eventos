@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace PruebaFechas
 {
@@ -9,9 +10,12 @@ namespace PruebaFechas
 	{
 		private IConvertidorAEvento IconvertidorAEvento { get; set; }
 
+		public Func<string, string[]> lectorArchivo { get; set; }
+
 		public LectorArchivos(IConvertidorAEvento _IconvertidorAEvento)
 		{
 			IconvertidorAEvento = _IconvertidorAEvento;
+			lectorArchivo = cRuta => File.ReadAllLines(cRuta);
 		}
 
 		public List<Evento> LeerArchivoAListaEvento(string _cRuta)
@@ -19,7 +23,7 @@ namespace PruebaFechas
 			List<Evento> lstEventos = null;
 			List<string> lstLineas = new List<string>();
 
-			string[] aLineas = File.ReadAllLines(_cRuta);
+			string[] aLineas = lectorArchivo(_cRuta);
 
 			lstLineas = aLineas.ToList();
 
