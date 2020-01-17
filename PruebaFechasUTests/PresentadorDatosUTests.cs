@@ -6,19 +6,24 @@ namespace PruebaFechas.Tests
 	public class PresentadorDatosUTests
 	{
 		[TestMethod()]
-		public void MostrarEnConsola_DatosParaMostrar_PresentaDatos()
+		public void MostrarDatos_DatosParaMostrar_EjecutoElMetodo()
 		{
 			//Arrange
+			string cMensaje = "AntesMetodo";
+			string cEsperado = "entró";
 			var SUT = new PresentadorDatos();
-			SUT.presentadorDatos = e => Dumy();
+			SUT.presentadorDatos = e => Dumy(ref cMensaje);
 
 			//Act
-			SUT.MostrarEnConsola("");
+			SUT.MostrarDatos("");
 
 			//Assert
-			Assert.IsTrue(true);
+			Assert.AreEqual(cEsperado, cMensaje);
 		}
 
-		private void Dumy() { }
+		private void Dumy(ref string _cMensaje) 
+		{
+			_cMensaje = "entró";
+		}
 	}
 }

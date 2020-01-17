@@ -24,7 +24,7 @@ namespace PruebaFechas
 			{
 				cDiferencia = diferenciaEvento.ObtenerDiferenciaFechas(DateTime.Now, evento.dtFecha);
 				cResultadoEvento = $" {evento.cTitulo} {cDiferencia}";
-				presentador.MostrarEnConsola(cResultadoEvento);
+				presentador.MostrarDatos(cResultadoEvento);
 			}
 
 			Console.ReadLine();

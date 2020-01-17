@@ -12,7 +12,7 @@ namespace PruebaFechas
 			presentadorDatos = cMensaje => Console.WriteLine(cMensaje);
 		}
 
-		public void MostrarEnConsola(string _cMensaje)
+		public void MostrarDatos(string _cMensaje)
 		{
 			presentadorDatos(_cMensaje);
 		}
